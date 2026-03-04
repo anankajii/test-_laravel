@@ -3,7 +3,7 @@
 @section('content')
     <!-- Hero Section -->
     <section id="hero" class="hero section light-background">
-
+<h1 style="color:red">TEST HOME</h1>
       <div class="container">
         <div class="row gy-4">
           <div class="col-lg-6 order-2 order-lg-1 d-flex flex-column justify-content-center text-center text-md-start" data-aos="fade-up">
@@ -177,7 +177,7 @@
               <div class="icon">
                 <i class="bi bi-cash-stack" style="color: #0dcaf0;"></i>
               </div>
-              <a href="service-details.html" class="stretched-link">
+              <a href="/backend/html/ltr/service-details.html" class="stretched-link">
                 <h3>Nesciunt Mete</h3>
               </a>
               <p>Provident nihil minus qui consequatur non omnis maiores. Eos accusantium minus dolores iure perferendis tempore et consequatur.</p>
@@ -189,7 +189,7 @@
               <div class="icon">
                 <i class="bi bi-calendar4-week" style="color: #fd7e14;"></i>
               </div>
-              <a href="service-details.html" class="stretched-link">
+              <a href="/backend/html/ltr/service-details.html" class="stretched-link">
                 <h3>Eosle Commodi</h3>
               </a>
               <p>Ut autem aut autem non a. Sint sint sit facilis nam iusto sint. Libero corrupti neque eum hic non ut nesciunt dolorem.</p>
@@ -201,7 +201,7 @@
               <div class="icon">
                 <i class="bi bi-chat-text" style="color: #20c997;"></i>
               </div>
-              <a href="service-details.html" class="stretched-link">
+              <a href="/backend/html/ltr/service-details.html" class="stretched-link">
                 <h3>Ledo Markt</h3>
               </a>
               <p>Ut excepturi voluptatem nisi sed. Quidem fuga consequatur. Minus ea aut. Vel qui id voluptas adipisci eos earum corrupti.</p>
@@ -213,11 +213,11 @@
               <div class="icon">
                 <i class="bi bi-credit-card-2-front" style="color: #df1529;"></i>
               </div>
-              <a href="service-details.html" class="stretched-link">
+              <a href="/backend/html/ltr/service-details.html" class="stretched-link">
                 <h3>Asperiores Commodit</h3>
               </a>
               <p>Non et temporibus minus omnis sed dolor esse consequatur. Cupiditate sed error ea fuga sit provident adipisci neque.</p>
-              <a href="service-details.html" class="stretched-link"></a>
+              <a href="/backend/html/ltr/service-details.html" class="stretched-link"></a>
             </div>
           </div><!-- End Service Item -->
 
@@ -226,11 +226,11 @@
               <div class="icon">
                 <i class="bi bi-globe" style="color: #6610f2;"></i>
               </div>
-              <a href="service-details.html" class="stretched-link">
+              <a href="/backend/html/ltr/service-details.html" class="stretched-link">
                 <h3>Velit Doloremque</h3>
               </a>
               <p>Cumque et suscipit saepe. Est maiores autem enim facilis ut aut ipsam corporis aut. Sed animi at autem alias eius labore.</p>
-              <a href="service-details.html" class="stretched-link"></a>
+              <a href="/backend/html/ltr/service-details.html" class="stretched-link"></a>
             </div>
           </div><!-- End Service Item -->
 
@@ -239,11 +239,11 @@
               <div class="icon">
                 <i class="bi bi-clock" style="color: #f3268c;"></i>
               </div>
-              <a href="service-details.html" class="stretched-link">
+              <a href="/backend/html/ltr/service-details.html" class="stretched-link">
                 <h3>Dolori Architecto</h3>
               </a>
               <p>Hic molestias ea quibusdam eos. Fugiat enim doloremque aut neque non et debitis iure. Corrupti recusandae ducimus enim.</p>
-              <a href="service-details.html" class="stretched-link"></a>
+              <a href="/backend/html/ltr/service-details.html" class="stretched-link"></a>
             </div>
           </div><!-- End Service Item -->
 
@@ -283,7 +283,7 @@
                   <h4>App 1</h4>
                   <p>Lorem ipsum, dolor sit amet consectetur</p>
                   <a href="{{ asset('frontend/assets/img/portfolio/app-1.jpg') }}" title="App 1" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                  <a href="/backend/html/ltr/portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
                 </div>
               </div>
             </div><!-- End Portfolio Item -->
@@ -295,7 +295,7 @@
                   <h4>Product 1</h4>
                   <p>Lorem ipsum, dolor sit amet consectetur</p>
                   <a href="{{ asset('frontend/assets/img/portfolio/product-1.jpg') }}" title="Product 1" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                  <a href="/backend/html/ltr/portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
                 </div>
               </div>
             </div><!-- End Portfolio Item -->
@@ -307,7 +307,7 @@
                   <h4>Branding 1</h4>
                   <p>Lorem ipsum, dolor sit amet consectetur</p>
                   <a href="{{ asset('frontend/assets/img/portfolio/branding-1.jpg') }}" title="Branding 1" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                  <a href="/backend/html/ltr/portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
                 </div>
               </div>
             </div><!-- End Portfolio Item -->
@@ -319,7 +319,7 @@
                   <h4>Books 1</h4>
                   <p>Lorem ipsum, dolor sit amet consectetur</p>
                   <a href="{{ asset('frontend/assets/img/portfolio/books-1.jpg') }}" title="Books 1" data-gallery="portfolio-gallery-book" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                  <a href="/backend/html/ltr/portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
                 </div>
               </div>
             </div><!-- End Portfolio Item -->
@@ -331,7 +331,7 @@
                   <h4>App 2</h4>
                   <p>Lorem ipsum, dolor sit amet consectetur</p>
                   <a href="{{ asset('frontend/assets/img/portfolio/app-2.jpg') }}" title="App 2" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                  <a href="/backend/html/ltr/portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
                 </div>
               </div>
             </div><!-- End Portfolio Item -->
@@ -343,7 +343,7 @@
                   <h4>Product 2</h4>
                   <p>Lorem ipsum, dolor sit amet consectetur</p>
                   <a href="{{ asset('frontend/assets/img/portfolio/product-2.jpg') }}" title="Product 2" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                  <a href="/backend/html/ltr/portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
                 </div>
               </div>
             </div><!-- End Portfolio Item -->
@@ -355,7 +355,7 @@
                   <h4>Branding 2</h4>
                   <p>Lorem ipsum, dolor sit amet consectetur</p>
                   <a href="{{ asset('frontend/assets/img/portfolio/branding-2.jpg') }}" title="Branding 2" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                  <a href="/backend/html/ltr/portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
                 </div>
               </div>
             </div><!-- End Portfolio Item -->
@@ -367,7 +367,7 @@
                   <h4>Books 2</h4>
                   <p>Lorem ipsum, dolor sit amet consectetur</p>
                   <a href="{{ asset('frontend/assets/img/portfolio/books-2.jpg') }}" title="Books 2" data-gallery="portfolio-gallery-book" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                  <a href="/backend/html/ltr/portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
                 </div>
               </div>
             </div><!-- End Portfolio Item -->
@@ -379,7 +379,7 @@
                   <h4>App 3</h4>
                   <p>Lorem ipsum, dolor sit amet consectetur</p>
                   <a href="{{ asset('frontend/assets/img/portfolio/app-3.jpg') }}" title="App 3" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                  <a href="/backend/html/ltr/portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
                 </div>
               </div>
             </div><!-- End Portfolio Item -->
@@ -391,7 +391,7 @@
                   <h4>Product 3</h4>
                   <p>Lorem ipsum, dolor sit amet consectetur</p>
                   <a href="{{ asset('frontend/assets/img/portfolio/product-3.jpg') }}" title="Product 3" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                  <a href="/backend/html/ltr/portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
                 </div>
               </div>
             </div><!-- End Portfolio Item -->
@@ -403,7 +403,7 @@
                   <h4>Branding 3</h4>
                   <p>Lorem ipsum, dolor sit amet consectetur</p>
                   <a href="{{ asset('frontend/assets/img/portfolio/branding-3.jpg') }}" title="Branding 3" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                  <a href="/backend/html/ltr/portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
                 </div>
               </div>
             </div><!-- End Portfolio Item -->
@@ -415,7 +415,7 @@
                   <h4>Books 3</h4>
                   <p>Lorem ipsum, dolor sit amet consectetur</p>
                   <a href="{{ asset('frontend/assets/img/portfolio/books-3.jpg') }}" title="Books 3" data-gallery="portfolio-gallery-book" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                  <a href="/backend/html/ltr/portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
                 </div>
               </div>
             </div><!-- End Portfolio Item -->

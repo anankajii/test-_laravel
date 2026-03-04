@@ -1,7 +1,7 @@
 <header id="header" class="header d-flex align-items-center sticky-top">
     <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
 
-      <a href="index.html" class="logo d-flex align-items-center">
+      <a href="/backend/html/ltr/index.html" class="logo d-flex align-items-center">
         <img src="{{ asset('frontend/assets/img/logo.png') }}" alt="">
         <!-- Uncomment the line below if you also wish to use text logo -->
         <!-- <h1 class="sitename">Butterfly</h1>  -->
