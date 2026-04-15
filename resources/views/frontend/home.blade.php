@@ -3,7 +3,7 @@
 @section('content')
     <!-- Hero Section -->
     <section id="hero" class="hero section light-background">
-<h1 style="color:red">TEST HOME</h1>
+<!-- <h1 style="color:red">TEST HOME</h1> -->
       <div class="container">
         <div class="row gy-4">
           <div class="col-lg-6 order-2 order-lg-1 d-flex flex-column justify-content-center text-center text-md-start" data-aos="fade-up">
@@ -312,7 +312,7 @@
               </div>
             </div><!-- End Portfolio Item -->
 
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-books">
+          <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-books">
               <div class="portfolio-content h-100">
                 <img src="{{ asset('frontend/assets/img/portfolio/books-1.jpg') }}" class="img-fluid" alt="">
                 <div class="portfolio-info">

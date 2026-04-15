@@ -10,6 +10,7 @@ use App\Http\Controllers\HomeController;
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\Frontend\Acara7Controller as FrontendAcara7Controller;
 use App\Http\Controllers\Backend\DashboardController as BackendDashboardController;
+use App\Http\Controllers\Backend\PengalamanKerjaController as BackendPengalamanKerjaController;
 
 /*
 |--------------------------------------------------------------------------
@@ -52,7 +53,7 @@ Route::resource('acara7', FrontendAcara7Controller::class);
 // Route ke Controller (format modern Laravel)
 //acara8
 Route::resource('dashboard', BackendDashboardController::class);
-
+Route::resource('pengalaman_kerja', BackendPengalamanKerjaController::class);
 // Route::get($uri, $callback);
 // Route::post($uri, $callback);
 // Route::put($uri, $callback);
