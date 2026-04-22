@@ -4,7 +4,7 @@
 
 <div class="page-breadcrumb">
     <h4 class="page-title">Riwayat Hidup</h4>
-    <p>Pengalaman Kerja</p>
+    <p>Pendidikan</p>
 </div>
 
 <div class="container-fluid">
@@ -12,7 +12,7 @@
     <div class="card">
         <div class="card-body">
 
-            <a href="/pengalaman_kerja/create" class="btn btn-primary mb-3">
+            <a href="pendidikan/create" class="btn btn-primary mb-3">
                 + Tambah
             </a>
 
@@ -22,33 +22,35 @@
                     <thead>
                         <tr>
                             <th>No</th>
-                            <th>Jabatan</th>
+                            <th>Nama Sekolah</th>
+                            <th>Tingkatan</th>
                             <th>Tahun Masuk</th>
-                            <th>Tahun Keluar</th>
-                            <th>Sistem</th>
+                            <th>Tahun Selesai</th>
                             <th>Aksi</th>
                         </tr>
                     </thead>
 
                     <tbody>
 
-                        @foreach($pengalaman_kerja as $key => $data)
+                        @foreach($pendidikan as $key => $data)
 
                         <tr>
                             <td>{{ $key+1 }}</td>
-                            <td>{{ $data->jabatan }}</td>
+                            <td>{{ $data->nama_sekolah }}</td>
+                            <td>{{ $data->tingkatan }}</td>
                             <td>{{ $data->tahun_masuk }}</td>
                             <td>{{ $data->tahun_keluar }}</td>
-                            <td>{{ $data->sistem }}</td>
 
                             <td>
 
-                                <a href="/pengalaman_kerja/{{ $data->id }}/edit"
+                                <a href="pendidikan/{{ $data->id }}/edit"
                                     class="btn btn-warning btn-sm">
                                     Edit
                                 </a>
 
-                                <form action="{{ route('pengalaman_kerja.destroy', $data->id) }}" method="POST" style="display:inline;">
+                                <form action="{{ route('pendidikan.destroy', $data->id) }}"
+                                      method="POST"
+                                      style="display:inline;">
                                     @csrf
                                     @method('DELETE')
 
@@ -70,6 +72,7 @@
 
         </div>
     </div>
+
 <script>
 document.addEventListener('click', function(e) {
 
@@ -98,6 +101,7 @@ document.addEventListener('click', function(e) {
 
 });
 </script>
+
 </div>
 
 @endsection

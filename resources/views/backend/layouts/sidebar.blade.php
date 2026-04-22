@@ -1,57 +1,76 @@
 <aside class="left-sidebar">
 
-<div class="scroll-sidebar">
+    <div class="scroll-sidebar">
 
-    <nav class="sidebar-nav">
+        <nav class="sidebar-nav">
 
-        <ul id="sidebarnav">
+            <ul id="sidebarnav">
 
-            <!-- Dashboard -->
-            <li class="sidebar-item">
-                <a class="sidebar-link waves-effect waves-dark"
-                   href="/dashboard">
+                <!-- Dashboard -->
+                <li class="sidebar-item">
+                    <a class="sidebar-link waves-effect waves-dark"
+                        href="/dashboard">
 
-                    <i class="mdi mdi-view-dashboard"></i>
+                        <i class="mdi mdi-view-dashboard"></i>
 
-                    <span class="hide-menu">
-                        Dashboard
-                    </span>
+                        <span class="hide-menu">
+                            Dashboard
+                        </span>
 
-                </a>
-            </li>
+                    </a>
+                </li>
 
-            <!-- Pengalaman Kerja -->
-            <li class="sidebar-item">
-                <a class="sidebar-link waves-effect waves-dark"
-                   href="/pengalaman_kerja">
+                {{-- RIWAYAT HIDUP --}}
+                <li class="sidebar-item">
 
-                    <i class="mdi mdi-briefcase"></i>
+                    <a class="sidebar-link waves-effect waves-dark"
+                        href="javascript:void(0)"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#riwayatMenu"
+                        aria-expanded="false">
 
-                    <span class="hide-menu">
-                        Pengalaman Kerja
-                    </span>
+                        <i class="mdi mdi-folder"></i>
+                        <span class="hide-menu">Riwayat Hidup</span>
+                    </a>
 
-                </a>
-            </li>
+                    <ul class="collapse list-unstyled ms-3" id="riwayatMenu">
 
-            <!-- Logout -->
-            <li class="sidebar-item">
-                <a class="sidebar-link waves-effect waves-dark"
-                   href="/logout">
+                        <li class="sidebar-item">
+                            <a href="/pengalaman_kerja"
+                                class="sidebar-link {{ request()->is('backend/pengalaman_kerja*') ? 'active' : '' }}">
+                                <span class="hide-menu">Pengalaman Kerja</span>
+                            </a>
+                        </li>
 
-                    <i class="mdi mdi-logout"></i>
+                        <li class="sidebar-item">
+                            <a href="/pendidikan"
+                                class="sidebar-link {{ request()->is('backend/pendidikan*') ? 'active' : '' }}">
+                                <span class="hide-menu">Pendidikan</span>
+                            </a>
+                        </li>
 
-                    <span class="hide-menu">
-                        Logout
-                    </span>
+                    </ul>
 
-                </a>
-            </li>
+                </li>
 
-        </ul>
+                <!-- Logout -->
+                <li class="sidebar-item">
+                    <a class="sidebar-link waves-effect waves-dark"
+                        href="/logout">
 
-    </nav>
+                        <i class="mdi mdi-logout"></i>
 
-</div>
+                        <span class="hide-menu">
+                            Logout
+                        </span>
+
+                    </a>
+                </li>
+
+            </ul>
+
+        </nav>
+
+    </div>
 
 </aside>

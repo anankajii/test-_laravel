@@ -8,9 +8,14 @@ use Illuminate\Support\Facades\Auth;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\DashboardController;
+use App\Http\Controllers\SessionController;
+use App\Http\Controllers\PegawaiController;
+use App\Http\Controllers\CobaController;
+use App\Http\Controllers\UploadController;
 use App\Http\Controllers\Frontend\Acara7Controller as FrontendAcara7Controller;
 use App\Http\Controllers\Backend\DashboardController as BackendDashboardController;
 use App\Http\Controllers\Backend\PengalamanKerjaController as BackendPengalamanKerjaController;
+use App\Http\Controllers\Backend\PendidikanController;
 
 /*
 |--------------------------------------------------------------------------
@@ -53,7 +58,10 @@ Route::resource('acara7', FrontendAcara7Controller::class);
 // Route ke Controller (format modern Laravel)
 //acara8
 Route::resource('dashboard', BackendDashboardController::class);
+
+
 Route::resource('pengalaman_kerja', BackendPengalamanKerjaController::class);
+Route::resource('pendidikan', PendidikanController::class);
 // Route::get($uri, $callback);
 // Route::post($uri, $callback);
 // Route::put($uri, $callback);
@@ -129,3 +137,32 @@ Route::resource('pengalaman_kerja', BackendPengalamanKerjaController::class);
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+//session
+Route::get('/session/create', [SessionController::class, 'create']);
+Route::get('/session/show', [SessionController::class, 'show']);
+Route::get('/session/delete', [SessionController::class, 'delete']);
+
+Route::get('/pegawai/{nama}', [PegawaiController::class, 'index']);
+
+Route::get('/formulir', function () {
+    return view('formulir');
+});
+
+Route::post('/formulir/proses', [PegawaiController::class, 'proses']);
+
+//route eror
+Route::get('/cobacontroller/{nama?}', [CobaController::class, 'index']);
+
+//acara19
+Route::get('/upload', [UploadController::class, 'upload'])->name('upload');
+Route::post('/upload/proses', [UploadController::class, 'proses'])->name('upload.proses');
+Route::post('/upload/resize', [UploadController::class, 'resize_upload'])->name('upload.resize');
+
+//acara20
+// dropzone gambar
+Route::get('/dropzone', [UploadController::class, 'dropzone']);
+Route::post('/dropzone/store', [UploadController::class, 'dropzone_store'])->name('dropzone.store');
+
+Route::get('/pdf_upload', [UploadController::class, 'pdf_upload']);
+Route::post('/pdf/store', [UploadController::class, 'pdf_store'])->name('pdf.store');
